@@ -1,0 +1,154 @@
+body {
+    padding: 15px;
+}
+.moon {
+    position: relative;
+    display: block;
+    margin: 2rem;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    box-shadow: inset 12px 5px 0 3px #15B165;
+    border-radius: 50%;
+}
+
+.moon::after {
+    content: '';
+    position: absolute;
+    top: -18px;
+    right: -34px;
+    display: block;
+    margin: 2rem;
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    box-shadow: inset 6px 5px 0 3px #15B165;
+    border-radius: 50%;
+    transform: rotate(22deg);
+}
+
+.cont {
+    position: relative;
+    width: 190px;
+    height: 190px;
+    padding: 20px;
+}
+
+.eyes {
+    display: inline-block;
+    width: 10px;
+    height: 13px;
+    border: 3px solid #4FBFF1;
+    border-radius: 50%;
+    margin-right: 18px;
+    margin-top: 50px;
+    margin-bottom: -3px;
+    transform: rotate(-8deg);
+}
+
+.eyes.left {
+    border-radius: 34px / 37px;
+    height: 12px;
+    width: 7px;
+}
+
+.eyes.right {
+    margin-bottom: 17px;
+}
+/* '.eyes::nth-child(1){
+    margin-right: 0;
+}' */
+
+.eyes-cont {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    left: 16px;
+    top: -3px;
+}
+
+#oval {
+    width: 190px;
+    height: 100px;
+    background: #fff;
+    border-radius: 87px / 50px;
+    margin-left: 49px;
+    border: 5px solid #353332;
+    margin-top: -1px;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+  }
+
+  .antenna {
+    display: inline-block;
+    position: absolute;
+    top: -44px;
+    z-index: 1;
+    left: 0;
+}
+
+#box {
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    border:5px solid #353332;
+    background:
+      radial-gradient(circle at top left,transparent 59.4%,#353332 60% calc(60% + 4px),#1CAEE3 calc(60% + 5px));
+      transform: rotate(19deg);
+    background: -ms-radial-gradient(circle at top left,transparent 59.4%,#353332 60% calc(60% + 4px),#1CAEE3 calc(60% + 5px));
+      transform: rotate(19deg);
+  }
+
+.neck-tie {
+    position: relative;
+    margin-top: 113px;
+    margin-left: 82px;
+}
+
+.upper {
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 22px solid #353332;
+    transform: rotate(76deg);
+    position: relative;
+}
+.upper::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 14px solid #EEE328;
+    transform: rotate(0deg);
+    top: 5px;
+    bottom: 9px;
+    left: -7px;
+}
+
+.lower {
+    width: 0;
+    height: 0;
+    border-bottom: 27px solid #353332;
+    border-right: 17px solid transparent;
+    transform: rotate(-31deg);
+    margin-top: -17px;
+    margin-left: 14px;
+}
+
+.lower::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-bottom: 27px solid #EEE328;
+    border-right: 17px solid transparent;
+    transform: rotate(-31deg);
+    transform: rotate(0deg);
+    top: 5px;
+    bottom: 9px;
+    left: -7px;
+}
