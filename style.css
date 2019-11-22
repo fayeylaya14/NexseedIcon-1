@@ -160,8 +160,8 @@ body {
     left: 2px;
     top: 2px;
   }
-x
-  .lower-border:before {
+
+.lower-border:before {
     content: '';
     position: absolute;
     width: 0;
