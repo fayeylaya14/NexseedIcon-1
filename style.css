@@ -55,9 +55,6 @@ body {
 .eyes.right {
     margin-bottom: 17px;
 }
-/* '.eyes::nth-child(1){
-    margin-right: 0;
-}' */
 
 .eyes-cont {
     display: inline-block;
@@ -100,55 +97,77 @@ body {
       transform: rotate(19deg);
   }
 
-.neck-tie {
-    position: relative;
-    margin-top: 113px;
-    margin-left: 82px;
+.neck-tie  {
+  margin: 117px 89px;
+  transform: rotate(-45deg);
 }
 
-.upper {
+  .lower {
     width: 0;
     height: 0;
-    border-left: 12px solid transparent;
+    border-bottom: 20px solid #353332;
     border-right: 12px solid transparent;
-    border-bottom: 22px solid #353332;
-    transform: rotate(76deg);
+    transform: rotate(36deg);
     position: relative;
+    left: 10px;
+    top: -2px;
 }
-.upper::before {
+
+  .lower::before {
     content: '';
     position: absolute;
     width: 0;
     height: 0;
-    border-left: 7px solid transparent;
-    border-right: 7px solid transparent;
+    border-bottom: 20px solid #353332;
+    border-right: 13px solid transparent;
+    transform: scaleX(-1) rotate(63deg);
+    left: -1px;
+  }
+
+
+  .upper {
+    width: 0;
+    height: 0;
+    border-left: 18px solid transparent;
+    border-right: 18px solid transparent;
+    border-bottom: 21px solid #353332;
+    transform: rotate(184deg);
+    position: relative;
+  }
+
+  .upper::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
     border-bottom: 14px solid #EEE328;
     transform: rotate(0deg);
-    top: 5px;
+    top: 4px;
     bottom: 9px;
-    left: -7px;
-}
+    left: -13px;
+  }
 
-.lower {
+  .lower-border {
+    display: block;
     width: 0;
     height: 0;
-    border-bottom: 27px solid #353332;
-    border-right: 17px solid transparent;
-    transform: rotate(-31deg);
-    margin-top: -17px;
-    margin-left: 14px;
-}
-
-.lower::before {
+    border-bottom: 16px solid #EEE328;
+    border-right: 9px solid transparent;
+    transform: rotate(-3deg);
+    position: absolute;
+    left: 2px;
+    top: 2px;
+  }
+x
+  .lower-border:before {
     content: '';
     position: absolute;
     width: 0;
     height: 0;
-    border-bottom: 27px solid #EEE328;
-    border-right: 17px solid transparent;
-    transform: rotate(-31deg);
-    transform: rotate(0deg);
-    top: 5px;
-    bottom: 9px;
-    left: -7px;
-}
+    border-bottom: 16px solid #EEE328;
+    border-right: 9px solid transparent;
+    transform: scaleX(-1) rotate(59deg);
+    left: -1px;
+  }
